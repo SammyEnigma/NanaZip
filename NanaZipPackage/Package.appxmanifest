@@ -17,7 +17,7 @@
   <Identity
     Name="40174MouriNaruto.NanaZipPreview"
     Publisher="CN=E310A153-74A9-4D81-800B-857A8D58408A"
-    Version="1.2.225.0" />
+    Version="1.2.253.0" />
 
   <Properties>
     <DisplayName>NanaZip Preview</DisplayName>
@@ -120,7 +120,7 @@
           </uap3:AppExecutionAlias>
         </uap3:Extension>
         <uap:Extension Category="windows.fileTypeAssociation">
-          <uap:FileTypeAssociation Name="fileassociations">
+          <uap3:FileTypeAssociation Name="fileassociations" Parameters="&quot;%1&quot;">
             <uap:Logo>Assets\ArchiveFile.png</uap:Logo>
             <uap:SupportedFileTypes>
               <uap:FileType>.001</uap:FileType>
@@ -167,11 +167,8 @@
               <uap:FileType>.zip</uap:FileType>
               <uap:FileType>.zst</uap:FileType>
             </uap:SupportedFileTypes>
-            <uap2:SupportedVerbs>
-              <uap3:Verb Id="open" Parameters="&quot;%1&quot;">ms-resource:///Legacy/Resource540</uap3:Verb>
-            </uap2:SupportedVerbs>
-          </uap:FileTypeAssociation>
-        </uap:Extension>
+          </uap3:FileTypeAssociation>    
+      </uap:Extension>
         <desktop4:Extension Category="windows.fileExplorerContextMenus">
           <desktop4:FileExplorerContextMenus>
             <desktop5:ItemType Type="Directory">
